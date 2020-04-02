@@ -10,7 +10,7 @@ Configuration has the following settings:
 
 - Build has the following tasks.
   - Run unit tests
-  - Sign and create an release apk
+  - Sign and create an release apk (Keystore files and values are safely stored on Jenkins)
   - Upload it as an artifact to Jenkins
  
 - If build is successful:
