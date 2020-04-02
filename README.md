@@ -5,3 +5,15 @@
 Configuration has the following settings:
 
 - Job is parameterized for the branch so user can enter which branch to build from. (Default is master)
+
+- Jenkins job is triggered everytime user pushes his code or after the pull request.
+
+- Build has the following tasks.
+  - Run unit tests
+  - Sign and create an release apk
+  - Upload it as an artifact to Jenkins
+ 
+- If build is successful:
+  - Upload it to the Google Play Alpha channel.
+- Otherwise: 
+  - Send email to the developers together with the build log.
